@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.StickersListController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Pane prefHeight="62.0" prefWidth="568.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="205.0" layoutY="-3.0" prefHeight="34.0" prefWidth="159.0" text="Your stickers">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <HBox prefHeight="353.0" prefWidth="600.0">
+               <children>
+                  <Pane prefHeight="345.0" prefWidth="97.0">
+                     <children>
+                        <Button fx:id="logOutButton" layoutY="14.0" mnemonicParsing="false" onAction="#logOut" style="-fx-background-color: #0fb2f8;" text="Log out" textFill="WHITE">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="addStickerButton" alignment="CENTER" layoutX="11.0" layoutY="288.0" mnemonicParsing="false" onAction="#goToAddSticker" prefHeight="34.0" prefWidth="34.0" style="-fx-background-color: #0fb2f8;" text="+" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <ScrollPane hbarPolicy="NEVER" prefHeight="330.0" prefWidth="508.0" vbarPolicy="ALWAYS">
+                     <content>
+                        <VBox fx:id="stickersListVBox" prefHeight="330.0" prefWidth="482.0">
+                           <padding>
+                              <Insets right="48.0" />
+                           </padding>
+                        </VBox>
+                     </content>
+                     <padding>
+                        <Insets bottom="8.0" left="16.0" top="8.0" />
+                     </padding>
+                  </ScrollPane>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+         </padding>
+      </VBox>
+   </children>
+</Pane>

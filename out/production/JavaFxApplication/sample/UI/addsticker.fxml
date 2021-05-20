@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.AddStickerController">
+   <padding>
+      <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+   </padding>
+   <children>
+      <VBox layoutX="50.0" layoutY="105.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="42.0" prefWidth="468.0" text="Add Sticker">
+               <VBox.margin>
+                  <Insets bottom="8.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="stickerNameTextField" alignment="CENTER" prefHeight="39.0" prefWidth="448.0" promptText="Sticker name" />
+            <Label fx:id="errorLabel" alignment="CENTER" prefHeight="51.0" prefWidth="468.0" text="Label" textAlignment="CENTER" textFill="RED" textOverrun="CLIP" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <VBox>
+               <VBox.margin>
+                  <Insets top="24.0" />
+               </VBox.margin>
+               <children>
+                  <Pane prefHeight="42.0" prefWidth="444.0">
+                     <children>
+                        <Button fx:id="addStickerButton" contentDisplay="CENTER" layoutX="165.0" mnemonicParsing="false" onAction="#addSticker" style="-fx-background-color: #0fb2f8;" text="Add" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="backButton" contentDisplay="CENTER" layoutX="237.0" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: #0fb2f8;" text="Back" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+         </padding>
+      </VBox>
+   </children>
+</Pane>

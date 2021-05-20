@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.WelcomeController">
+   <children>
+      <Text layoutX="172.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Strackers!">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <Button fx:id="signUpButton" layoutX="254.0" layoutY="200.0" mnemonicParsing="false" onAction="#goToSignUp" style="-fx-background-color: #0fb2f8;" text="Sign up" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="loginButton" layoutX="260.0" layoutY="252.0" mnemonicParsing="false" onAction="#goToLogIn" style="-fx-background-color: #0fb2f8;" text="Log in" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="21.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

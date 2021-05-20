@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.LoginController">
+   <children>
+      <Label layoutX="263.0" layoutY="93.0" text="Login" textFill="#0fb2f8">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameTextField" alignment="CENTER" layoutX="78.0" layoutY="156.0" prefHeight="40.0" prefWidth="444.0" promptText="Username" />
+      <Button fx:id="loginButton" layoutX="201.0" layoutY="313.0" mnemonicParsing="false" onAction="#logIn" style="-fx-background-color: #0fb2f8;" text="Log in" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="signUpButton" layoutX="275.0" layoutY="313.0" mnemonicParsing="false" onAction="#goToSignUp" style="-fx-background-color: #0fb2f8;" text="Sign up instead" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Label fx:id="errorLabel" alignment="CENTER" layoutX="66.0" layoutY="251.0" prefHeight="51.0" prefWidth="468.0" text="Label" textAlignment="CENTER" textFill="RED" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordTextField" alignment="CENTER" layoutX="78.0" layoutY="211.0" prefHeight="40.0" prefWidth="444.0" promptText="Password" />
+   </children>
+</Pane>

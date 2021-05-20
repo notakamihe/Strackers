@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.RegisterController">
+    <children>
+        <Label layoutX="251.0" layoutY="70.0" text="Sign Up">
+            <font>
+                <Font name="System Bold" size="28.0" />
+            </font>
+        </Label>
+        <TextField fx:id="usernameTextField" alignment="CENTER" layoutX="66.0" layoutY="141.0" prefHeight="25.0" prefWidth="468.0" promptText="Username">
+            <padding>
+                <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+            </padding></TextField>
+        <TextField fx:id="emailTextField" alignment="CENTER" layoutX="65.0" layoutY="185.0" prefHeight="25.0" prefWidth="468.0" promptText="Email">
+            <padding>
+                <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+            </padding></TextField>
+        <Button fx:id="registerButton" layoutX="210.0" layoutY="338.0" mnemonicParsing="false" onAction="#register" style="-fx-background-color: #0fb2f8;" text="Register" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font></Button>
+        <Button fx:id="loginButton" layoutX="335.0" layoutY="338.0" mnemonicParsing="false" onAction="#goToLogin" style="-fx-background-color: #0fb2f8;" text="Log in" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font></Button>
+      <PasswordField fx:id="passwordTextField" alignment="CENTER" layoutX="64.0" layoutY="235.0" prefHeight="33.0" prefWidth="468.0" promptText="Password" />
+      <Label fx:id="errorLabel" alignment="CENTER" layoutX="69.0" layoutY="273.0" prefHeight="51.0" prefWidth="468.0" text="Label" textAlignment="CENTER" textFill="RED" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+    </children>
+</Pane>
